@@ -8,14 +8,17 @@
 import SwiftUI
 
 struct ContentView: View {
+    let color1 = Color(red: 0.659, green: 0.773, blue: 0.408)
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+        ZStack {
+            color1.ignoresSafeArea()
+            VStack {
+                
+                Text("Hello, world!")
+                    
+            }
+            .padding()
         }
-        .padding()
     }
 }
 
